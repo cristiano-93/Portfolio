@@ -5,22 +5,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
   </head>
   <body>
-<header>
-      <a href="index.html"><img class="logo" src="./images/logo.png" alt="logo" /></a>
-      <nav>
-        <ul class="nav_links">
-          <li><a class="a-header" href="index.html">Home</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="#">Page 2</a></li>
-        </ul>
-      </nav>
-    </header>
-    <h1 class="title">Home page</h1>
-    <h2 class="in-dev">In Development</h2>
-    <img src="./images/coding.gif" alt="Computer man" style="width:400px;height:400px;margin-left: 27%;">
-    <img src="./images/work-in-progress-social-nation.gif" alt="Computer man" style="width:400px;height:400px; margin-left: 10%;">
+    <!-- div wrapping the body -->
+    <div class="body-container">
+      <header>
+        <a href="index.html"><img class="logo" src="./images/logo.png" alt="logo" /></a>
+        <nav>
+          <ul class="nav_links">
+            <li><a id="header-home" href="index.html">Home</a></li>
+            <li><a id="header-contact" href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+      <!-- div wrapping the content -->
+      <div class="content-container">
+        <h2 class="warning">*Website In Development*</h2>
+        <section class="intro">
+          <h1 class="title">Hi, my name is Cristiano.</h1>
+          <h4 class="description">
+            I am an aspiring Web Developer currently based in Southampton, UK. Looking to start my career in Web Dev.
+          </h4>
+        </section>
+        <section class="social">
+          <ul id="social-item-list">
+            <a href="https://www.facebook.com/profile.php?id=100005761982419" class="fa fa-facebook fa-lg"></a>
+            <a href="https://twitter.com/Cristianoo93" class="fa fa-twitter fa-lg"></a>
+            <a href="https://www.linkedin.com/in/cristiano-santos-8a6754193/" class="fa fa-linkedin fa-lg"></a>
+          </ul>
+        </section>
+        <section class="projects">
+          <div class="current-projects">
+            <h2 class="title">Current Projects</h2>
+            <div class="projects-list"></div>
+          </div>
+          <div class="previous-projects">
+            <h2 class="title">Previous Projects</h2>
+            <div class="projects-list"></div>
+          </div>
+        </section>
+      </div>
+    </div>
   </body>
 </html>

@@ -41,6 +41,7 @@ header {
   box-shadow: 0px 0px 4px;
   border-top-style: none;
   border-left-style: none;
+  font-family: "Oxygen", sans-serif;
 }
 .nav_links li a:hover {
   background-color: rgba(0, 204, 255, 0.5);

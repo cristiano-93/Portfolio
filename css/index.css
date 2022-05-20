@@ -42,6 +42,7 @@ header {
   color: rgb(80, 80, 80);
   padding: 5px 10px;
   text-decoration: none;
+  font-family: "Oxygen", sans-serif;
 
   border-radius: 15px;
   border: 3px solid;
@@ -81,13 +82,20 @@ button:hover {
   box-shadow: 5px 5px 10px #888888;
 }
 .title {
-  font-size: 36px;
-  margin-left: 10%;
+  font-size: 20px;
+  margin-left: 5%;
+  font-family: "Oxygen", sans-serif;
+}
+#title-name{
+font-size: 60px;
+  margin: 0 0 0 10%;
+  font-family: "Oxygen", sans-serif;
 }
 .description {
-  padding: 10px;
+  padding: 0 0 10px 0 ;
+  margin: 10px 0 20px 5%;
   font-size: 26px;
-  font-family: "Lucida Console", "Courier New", monospace;
+  font-family: "Oxygen", sans-serif;
 }
 
 .social {
@@ -128,14 +136,14 @@ button:hover {
 .current-projects {
   width: 45%;
   background-color: rgb(237, 237, 237);
-  margin: 40px;
+  margin: 40px auto;
   border-radius: 15px;
   border: 3px solid;
   border-bottom-style: none;
   border-right-style: none;
   box-shadow: 5px 5px 10px #888888;
 }
-.previous-projects {
+/* .previous-projects {
   width: 45%;
   background-color: rgb(237, 237, 237);
   margin: 40px;
@@ -144,7 +152,7 @@ button:hover {
   border-bottom-style: none;
   border-right-style: none;
   box-shadow: 5px 5px 10px #888888;
-}
+} */
 .projects-list {
   height: 150px;
 }

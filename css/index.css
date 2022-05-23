@@ -25,6 +25,8 @@ header {
   border: 3px solid;
   border-top-style: none;
   border-left-style: none;
+  border-right-color: rgb(230, 0, 233);
+  border-bottom-color: rgb(52, 90, 224);
 }
 
 .logo {
@@ -46,53 +48,43 @@ header {
 
   border-radius: 15px;
   border: 3px solid;
-  box-shadow: 0px 0px 4px;
   border-top-style: none;
   border-left-style: none;
+  border-right-color: rgba(230, 0, 233,0.6) ;
+  border-bottom-color: rgba(52, 90, 224, 0.6);
 }
 .nav_links li a:hover {
-  background-color: rgba(48, 93, 223, 0.5);
-}
-button {
-  padding: 10px 25px;
-  background-color: rgba(0, 136, 169, 1);
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
-  transition: all 0.3s ease 0s;
-  font-size: 24px;
-}
-button:hover {
-  background-color: rgba(0, 136, 169, 0.7);
-}
-#header-contact{
-  box-shadow: none;
+  border-width: 6px;
 }
 
+#header-home {
+  box-shadow: 0px 0px 5px;
+}
 
 /* Content styling */
 .intro {
   width: 80%;
   margin: 0 auto;
-  background-color: rgb(237, 237, 237);
+
   border-radius: 15px;
   border: 3px solid;
-  border-bottom-style: none;
-  border-right-style: none;
-  box-shadow: 5px 5px 10px #888888;
+  border-top-style: none;
+  border-left-style: none;
+  border-right-color: rgba(230, 0, 233,0.6) ;
+  border-bottom-color: rgba(52, 90, 224, 0.6);
 }
 .title {
   font-size: 20px;
   margin-left: 5%;
   font-family: "Oxygen", sans-serif;
 }
-#title-name{
-font-size: 60px;
+#title-name {
+  font-size: 60px;
   margin: 0 0 0 10%;
   font-family: "Oxygen", sans-serif;
 }
 .description {
-  padding: 0 0 10px 0 ;
+  padding: 0 0 10px 0;
   margin: 10px 0 20px 5%;
   font-size: 26px;
   font-family: "Oxygen", sans-serif;
@@ -111,7 +103,7 @@ font-size: 60px;
   width: 30px;
   text-align: center;
   text-decoration: none;
-  margin: 5px 20px;
+  margin: 40px 20px;
   border-radius: 50%;
 }
 .fa:hover {
@@ -135,24 +127,14 @@ font-size: 60px;
 }
 .current-projects {
   width: 45%;
-  background-color: rgb(237, 237, 237);
   margin: 40px auto;
   border-radius: 15px;
   border: 3px solid;
-  border-bottom-style: none;
-  border-right-style: none;
-  box-shadow: 5px 5px 10px #888888;
+  border-top-style: none;
+  border-left-style: none;
+  border-right-color: rgba(230, 0, 233,0.6) ;
+  border-bottom-color: rgba(52, 90, 224, 0.6);
 }
-/* .previous-projects {
-  width: 45%;
-  background-color: rgb(237, 237, 237);
-  margin: 40px;
-  border-radius: 15px;
-  border: 3px solid;
-  border-bottom-style: none;
-  border-right-style: none;
-  box-shadow: 5px 5px 10px #888888;
-} */
 .projects-list {
   height: 150px;
 }

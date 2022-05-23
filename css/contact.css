@@ -18,6 +18,8 @@ header {
   border: 3px solid;
   border-top-style: none;
   border-left-style: none;
+  border-right-color: rgb(230, 0, 233);
+  border-bottom-color: rgb(52, 90, 224);
 }
 
 .logo {
@@ -36,30 +38,22 @@ header {
   padding: 5px 10px;
   text-decoration: none;
 
+
   border-radius: 15px;
   border: 3px solid;
-  box-shadow: 0px 0px 4px;
   border-top-style: none;
   border-left-style: none;
+  border-right-color: rgba(230, 0, 233,0.6) ;
+  border-bottom-color: rgba(52, 90, 224, 0.6);
+
   font-family: "Oxygen", sans-serif;
 }
 .nav_links li a:hover {
-  background-color: rgba(0, 204, 255, 0.5);
+  border-width: 6px;
 }
-button {
-  padding: 10px 25px;
-  background-color: rgba(0, 136, 169, 1);
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
-  transition: all 0.3s ease 0s;
-  font-size: 24px;
-}
-button:hover {
-  background-color: rgba(0, 136, 169, 0.7);
-}
-#header-home{
-  box-shadow: none;
+
+#header-contact{
+  box-shadow: 0px 0px 5px;
 }
 /* Contact Form styling */
 

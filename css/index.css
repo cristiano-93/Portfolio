@@ -44,7 +44,7 @@ header {
   color: rgb(80, 80, 80);
   padding: 5px 10px;
   text-decoration: none;
-  font-family: "Oxygen", sans-serif;
+  font-family: 'PT Serif', serif;
 
   border-radius: 15px;
   border: 3px solid;
@@ -54,7 +54,7 @@ header {
   border-bottom-color: rgba(52, 90, 224, 0.6);
 }
 .nav_links li a:hover {
-  border-width: 6px;
+  border-bottom-width: 6px;
 }
 
 #header-home {
@@ -73,21 +73,21 @@ header {
   border-right-color: rgba(230, 0, 233,0.6) ;
   border-bottom-color: rgba(52, 90, 224, 0.6);
 }
-.title {
-  font-size: 20px;
+.title-h1 {
+  font-size: 26px;
   margin-left: 5%;
-  font-family: "Oxygen", sans-serif;
+  font-family: 'PT Serif', serif;
 }
 #title-name {
   font-size: 60px;
-  margin: 0 0 0 10%;
-  font-family: "Oxygen", sans-serif;
+  margin: 3% 0 3% 10%;
+  font-family: 'PT Serif', serif;
 }
 .description {
   padding: 0 0 10px 0;
   margin: 10px 0 20px 5%;
   font-size: 26px;
-  font-family: "Oxygen", sans-serif;
+  font-family: 'PT Serif', serif;
 }
 
 .social {
@@ -121,9 +121,10 @@ header {
   background: #007bb5;
   color: white;
 }
-
-.projects {
-  display: flex;
+.title-h2 {
+  font-family: 'PT Serif', serif;
+  width: 10%;
+  margin: 20px auto;
 }
 .current-projects {
   width: 45%;
@@ -137,6 +138,15 @@ header {
 }
 .projects-list {
   height: 150px;
+}
+.title-h3{
+  font-family: 'PT Serif', serif;
+  margin-left: 5%;
+}
+.project-p{
+  font-size: 20px;
+  font-family: 'PT Serif', serif;
+  padding: 10px;
 }
 /*  Footer styling */
 

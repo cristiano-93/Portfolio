@@ -49,7 +49,7 @@ header {
   font-family: "Oxygen", sans-serif;
 }
 .nav_links li a:hover {
-  border-width: 6px;
+  border-bottom-width: 6px;
 }
 
 #header-contact{

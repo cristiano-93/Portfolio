@@ -7,6 +7,11 @@
   width: 70vw;
   margin: 10vh auto 0;
 }
+.warning {
+  text-align: center;
+  font-size: 30px;
+  color: #d81010;
+}
 
 /* Header styling */
 header {
@@ -20,6 +25,7 @@ header {
   border-left-style: none;
   border-right-color: rgb(230, 0, 233);
   border-bottom-color: rgb(52, 90, 224);
+  margin-bottom: -50px;
 }
 
 .logo {
@@ -32,27 +38,25 @@ header {
   text-decoration: none;
 }
 .nav_links li a {
-  font-size: 30px;
+  font-size: 20px;
   font-weight: 500;
   color: rgb(80, 80, 80);
   padding: 5px 10px;
   text-decoration: none;
-
+  font-family: "PT Serif", serif;
 
   border-radius: 15px;
   border: 3px solid;
   border-top-style: none;
   border-left-style: none;
-  border-right-color: rgba(230, 0, 233,0.6) ;
+  border-right-color: rgba(230, 0, 233, 0.6);
   border-bottom-color: rgba(52, 90, 224, 0.6);
-
-  font-family: "Oxygen", sans-serif;
 }
 .nav_links li a:hover {
   border-bottom-width: 6px;
 }
 
-#header-contact{
+#header-contact {
   box-shadow: 0px 0px 5px;
 }
 /* Contact Form styling */
@@ -68,21 +72,17 @@ header {
   font-size: 60px;
   color: darkgoldenrod;
 }
-.warning {
-  text-align: center;
-  font-size: 30px;
-  color: #d81010;
-}
 form {
   max-width: 700px;
-  text-align: center;
   margin: 20px auto;
   padding: 20px 3px;
-  background-color: #d2d2d2;
+  background-color: rgba(52, 90, 224, 0.15);
   border-radius: 15px;
   border: 3px solid;
   border-top-style: none;
   border-left-style: none;
+  border-right-color: rgba(230, 0, 233, 1);
+  border-bottom-color: rgba(52, 90, 224, 1);
 }
 input {
   border: 0;
@@ -103,7 +103,7 @@ textarea {
   display: block;
   width: 296px;
   margin: 1em;
-  font-family: "Merriweather", sans-serif;
+  font-family: "PT Serif", serif;
   box-shadow: 0 1px 1px rgba(black, 0.1);
   resize: none;
 }

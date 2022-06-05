@@ -21,22 +21,23 @@
         <nav>
           <ul class="nav_links">
             <li><a id="headerHome" href="index.html">Home</a></li>
-            <li><a  href="#skillsSection">Skills</a></li>
-            <li><a  href="javascript:alertFunction()">CV</a></li>
-            <li><a  href="#projetsSection">Projects</a></li>
-            <li><a  href="#contactSection">Contact</a></li>
+            <li><a href="#skillsSection">Skills</a></li>
+            <li><a href="javascript:alertFunction()">CV</a></li>
+            <li><a href="#projectsSection">Projects</a></li>
+            <li><a href="#contactSection">Contact</a></li>
           </ul>
         </nav>
       </header>
       <!-- div wrapping the content -->
       <div class="content-container">
-        <button onclick="topFunction()" id="topBtn" title="to the top">Top</button>
+        <button onclick="topFunction()" id="myBtn" class="myBtn" title="Go to top">Top</button>
         <section class="intro">
           <h1 class="title-h1">Hi, my name is</h1>
           <h1 id="title-name">Cristiano Santos</h1>
           <h4 class="description">
             Trilingual and highly motivated recent bachelor's degree recipient with more than 10 years of experience working in a team in
-            different industries in different countries looking to kickstart my career in Web Development. During my course, the design and
+            different industries in different countries looking to kickstart my career in Web Development. <br>
+            During my course, the design and
             development of an app was very interesting and I found myself having fun doing it. Interested in further developing my
             JavaScript and React skills to create even better projects. Currently located in Southampton, UK but willing to relocate as
             necessary.<br />
@@ -52,26 +53,48 @@
             <a href="https://twitter.com/Cristianoo93" class="fa fa-twitter fa-4x"></a>
           </ul>
         </section>
-        <section class="skillsSection">
+        <section id="skillsSection">
           <h2 class="title-h2">Skills</h2>
           <p class="warningP">This section is not yet implemented</p>
         </section>
-        <section class="projectsSection">
+        <section id="projectsSection">
           <h2 class="title-h2">Projects</h2>
           <p class="warningP">This section is not yet implemented</p>
         </section>
         <section id="contactSection">
-          <form class="cf" id="contactForm">
+          <form class="cf" id="contactForm" action="https://formspree.io/f/xyyovyzn" method="POST">
             <h2 class="title-h2">Contact</h2>
-            <p class="warningP">This is not yet properly implemented</p>
-            <input type="text" class="input" id="inputName" placeholder="Name" />
-            <input type="email" class="input" id="input-email" placeholder="Email address" />
+            <p class="description" id="contactP">
+              If you would like to contact me, feel free to use the form bellow or send me a message on LinkedIn as its checked daily.
+              <br />
+              If you would like to provide any feedback about this portfolio website, I welcome all constructive feedback.
+            </p>
+            <input type="text" class="input" name="name" id="inputName" placeholder="Name" />
+            <input type="email" name="email" class="input" id="input-email" placeholder="Email address" />
             <textarea name="message" type="text" id="input-message" placeholder="Message"></textarea>
 
-            <input type="submit" value="Submit" id="inputSubmit" onclick="alertFunction()" />
+            <input type="submit" value="Submit" id="inputSubmit" />
           </form>
         </section>
       </div>
     </div>
+    <script>
+      //Go back up button script:
+      mybutton = document.querySelector(".myBtn");
+      console.log(mybutton);
+      window.onscroll = function () {
+        scrollFunction();
+      };
+      function scrollFunction() {
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+      function topFunction() {
+        document.documentElement.scrollTop = 0; 
+      }
+    </script>
   </body>
 </html>

@@ -5,9 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CristianoCodes</title>
-    <link rel="icon" href="images/logoIcon.png" />
+    <link rel="icon" href="assets/logoIcon.png" />
     <link rel="stylesheet" href="css/index.css" />
-    <script src="index.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -17,12 +16,12 @@
     <!-- div wrapping the body -->
     <div class="body-container">
       <header>
-        <a href="index.html"><img class="logo" src="./images/logo.png" alt="logo" /></a>
+        <a href="index.html"><img class="logo" src="./assets/logo.png" alt="logo" /></a>
         <nav>
           <ul class="nav_links">
             <li><a id="headerHome" href="index.html">Home</a></li>
-            <li><a href="#skillsSection">Skills</a></li>
-            <li><a href="javascript:alertFunction()">CV</a></li>
+            <!-- <li><a href="#skillsSection">Skills</a></li> -->
+            <li><a href="/assets/Cristiano_santos_CV.PDF" target="_blank">CV</a></li>
             <li><a href="#projectsSection">Projects</a></li>
             <li><a href="#contactSection">Contact</a></li>
           </ul>
@@ -36,11 +35,10 @@
           <h1 id="title-name">Cristiano Santos</h1>
           <h4 class="description">
             Trilingual and highly motivated recent bachelor's degree recipient with more than 10 years of experience working in a team in
-            different industries in different countries looking to kickstart my career in Web Development. <br>
-            During my course, the design and
-            development of an app was very interesting and I found myself having fun doing it. Interested in further developing my
-            JavaScript and React skills to create even better projects. Currently located in Southampton, UK but willing to relocate as
-            necessary.<br />
+            different industries in different countries looking to kickstart my career in Web Development. <br />
+            During my course, the design and development of an app was very interesting and I found myself having fun doing it. Interested
+            in further developing my JavaScript and React skills to create even better projects. Currently located in Southampton, UK but
+            willing to relocate as necessary.<br />
             Looking to kick start my career in Web Dev.
           </h4>
         </section>
@@ -53,13 +51,61 @@
             <a href="https://twitter.com/Cristianoo93" class="fa fa-twitter fa-4x"></a>
           </ul>
         </section>
-        <section id="skillsSection">
+        <!-- <section id="skillsSection">
           <h2 class="title-h2">Skills</h2>
-          <p class="warningP">This section is not yet implemented</p>
-        </section>
-        <section id="projectsSection">
-          <h2 class="title-h2">Projects</h2>
-          <p class="warningP">This section is not yet implemented</p>
+          <p class="warningP">This section is not yet properly implemented</p>
+        </section> -->
+        <section class="projectsSection">
+          <h2 class="title-h2" id="projects-title">Projects</h2>
+          <p class="warningP">This section is not yet properly implemented</p>
+          <ul id="projects-item-list">              
+              <a class="open-modal" data-open="modal1">
+                <h4 class="title-h4">AR Poi App</h4>
+                <img src="/assets/arpoiapp.png" alt="ar poi app icon" width="150px" height="150px" />
+              </a>
+              <a class="open-modal" data-open="modal2">
+                <h4 class="title-h4">Another App</h4>
+                <img src="/assets/icon_html.png" alt="ar poi app icon" width="150px" height="150px" />
+              </a>
+            <div class="btn-group">
+              <!-- <button type="button" class="open-modal" data-open="modal1">first modal</button> -->
+              <!-- <button type="button" class="open-modal" data-open="modal2">second modal</button> -->
+            </div>
+
+            <div class="modal" id="modal1">
+              <div class="modal-dialog">                
+                <section class="modal-content">                  
+                    <img src="/assets/arpoiapp.png" alt="ar poi app icon" width="150px" height="150px" />
+                    <a href="https://cristiano-93.github.io/ArPointsOfInterestApp/" target="_blank"><p>Hosted Link</p>
+                  </a>
+                  <p class="description">
+                    This is a mobile Augmented Reality App which will download OpenStreetMaps points of interest from a GeoJSON based API to
+                    display 3D models in the device camera so that the user can look around with their camera and see the rendered ponts of
+                    interest. <br />
+                    For this, it uses the AFRAME web framework to render the 3D models onto the screen and places them at each of the points
+                    of interest location. <br />
+                    Clicking on the icon will take you to the GitHub Page hosting the app which means you can try it on your desktop or on
+                    your mobile device.
+                  </p>
+                  <h3 >Technologies used</h3>
+                  <ul class="techUsed">
+                    <img class="icon" src="/assets/icon_html.png" alt="html icon" />
+                    <img class="icon" src="/assets/icon_javascript.png" alt="html icon" />
+                  </ul>
+                </section>
+              </div>
+            </div>
+            <div class="modal" id="modal2">
+              <div class="modal-dialog">            
+                <section class="modal-content">                  
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo repellendus reprehenderit accusamus totam ratione!
+                    Nesciunt, nemo dolorum recusandae ad ex nam similique dolorem ab perspiciatis qui. Facere, dignissimos. Nemo, ea.
+                  </p>
+                </section>
+              </div>
+            </div>          
+          </ul>
         </section>
         <section id="contactSection">
           <form class="cf" id="contactForm" action="https://formspree.io/f/xyyovyzn" method="POST">
@@ -78,23 +124,6 @@
         </section>
       </div>
     </div>
-    <script>
-      //Go back up button script:
-      mybutton = document.querySelector(".myBtn");
-      console.log(mybutton);
-      window.onscroll = function () {
-        scrollFunction();
-      };
-      function scrollFunction() {
-        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-          mybutton.style.display = "block";
-        } else {
-          mybutton.style.display = "none";
-        }
-      }
-      function topFunction() {
-        document.documentElement.scrollTop = 0; 
-      }
-    </script>
+    <script src="index.js"></script>
   </body>
 </html>

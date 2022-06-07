@@ -190,7 +190,6 @@ header {
   justify-content: center;
   padding: 1rem;
   background: var(--black);
-  background-color: rgba(220, 220, 220, 0.5);
   cursor: pointer;
   visibility: hidden;
   opacity: 0;

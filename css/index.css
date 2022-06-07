@@ -150,15 +150,13 @@ header {
 #projects-title{
   text-align: center;
 }
-.projectsSection{
-}
+/* .projectsSection{
+} */
 #projects-item-list{  
   display: flex;
-  background-color: #555;
   margin: 5px auto 20px;
   width: fit-content;
   
-  background-color: #efefef;
 }
 
 .open-modal {

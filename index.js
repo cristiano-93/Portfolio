@@ -57,3 +57,20 @@ document.addEventListener("keyup", (e) => {
     document.querySelector(".modal.is-visible").classList.remove(isVisible);
   }
 });
+
+// hamburger menu
+function openDropdown() {
+  var nl = document.getElementById("nav_links");
+  var hb = document.getElementById("hamBtn");
+  var state = [
+    '<img src="assets/icons8-menu1.png" style="height: 22px;" alt="open menu">',
+    '<img src="assets/icons8-menu2.png" style="height: 22px;" alt="close menu">',
+  ];
+  if (hb.innerHTML == state[0]) {
+    hb.innerHTML = state[1];
+    nl.classList.add("responsive");
+  } else {
+    hb.innerHTML = state[0];
+    nl.classList.remove("responsive");
+  }
+}

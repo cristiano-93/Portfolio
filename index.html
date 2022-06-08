@@ -15,18 +15,22 @@
   <body>
     <!-- div wrapping the body -->
     <div class="body-container">
-      <header>
+      <div class="headerContainer">
         <a href="index.html"><img class="logo" src="./assets/logo.png" alt="logo" /></a>
         <nav>
-          <ul class="nav_links">
-            <li><a id="headerHome" href="index.html">Home</a></li>
-            <!-- <li><a href="#skillsSection">Skills</a></li> -->
-            <li><a href="/assets/Cristiano_santos_CV.PDF" target="_blank">CV</a></li>
-            <li><a href="#projectsSection">Projects</a></li>
-            <li><a href="#contactSection">Contact</a></li>
+          <ul class="nav_links" id="nav_links">
+            <li>
+              <a href="javascript:void(0);" class="hamBtn" id="hamBtn" onclick="openDropdown()"
+                ><img src="assets/icons8-menu1.png" style="height: 22px" alt="menu"
+              /></a>
+            </li>
+            <li><a class="nav_link" id="headerHome" href="index.html">Home</a></li>
+            <li><a class="nav_link" href="/assets/Cristiano_santos_CV.PDF" target="_blank">CV</a></li>
+            <li><a class="nav_link" href="#projectsSection">Projects</a></li>
+            <li><a class="nav_link" href="#contactSection">Contact</a></li>
           </ul>
         </nav>
-      </header>
+      </div>
       <!-- div wrapping the content -->
       <div class="content-container">
         <button onclick="topFunction()" id="myBtn" class="myBtn" title="Go to top">Top</button>
@@ -58,26 +62,25 @@
         <section class="projectsSection">
           <h2 class="title-h2" id="projects-title">Projects</h2>
           <p class="warningP">This section is not yet properly implemented</p>
-          <ul id="projects-item-list">              
-              <a class="open-modal" data-open="modal1">
-                <h4 class="title-h4">AR Poi App</h4>
-                <img src="/assets/arpoiapp.png" alt="ar poi app icon" width="150px" height="150px" />
-              </a>
-              <a class="open-modal" data-open="modal2">
-                <h4 class="title-h4">Another App</h4>
-                <img src="/assets/icon_html.png" alt="ar poi app icon" width="150px" height="150px" />
-              </a>
+          <ul id="projects-item-list">
+            <a class="open-modal" data-open="modal1">
+              <h4 class="title-h4">AR Poi App</h4>
+              <img src="/assets/arpoiapp.png" alt="ar poi app icon" width="150px" height="150px" />
+            </a>
+            <a class="open-modal" data-open="modal2">
+              <h4 class="title-h4">Another App</h4>
+              <img src="/assets/icon_html.png" alt="ar poi app icon" width="150px" height="150px" />
+            </a>
             <div class="btn-group">
               <!-- <button type="button" class="open-modal" data-open="modal1">first modal</button> -->
               <!-- <button type="button" class="open-modal" data-open="modal2">second modal</button> -->
             </div>
 
             <div class="modal" id="modal1">
-              <div class="modal-dialog">                
-                <section class="modal-content">                  
-                    <img src="/assets/arpoiapp.png" alt="ar poi app icon" width="150px" height="150px" />
-                    <a href="https://cristiano-93.github.io/ArPointsOfInterestApp/" target="_blank"><p>Hosted Link</p>
-                  </a>
+              <div class="modal-dialog">
+                <section class="modal-content">
+                  <img src="/assets/arpoiapp.png" alt="ar poi app icon" width="150px" height="150px" />
+                  <a href="https://cristiano-93.github.io/ArPointsOfInterestApp/" target="_blank"><p>Hosted Link</p> </a>
                   <p class="description">
                     This is a mobile Augmented Reality App which will download OpenStreetMaps points of interest from a GeoJSON based API to
                     display 3D models in the device camera so that the user can look around with their camera and see the rendered ponts of
@@ -87,7 +90,7 @@
                     Clicking on the icon will take you to the GitHub Page hosting the app which means you can try it on your desktop or on
                     your mobile device.
                   </p>
-                  <h3 >Technologies used</h3>
+                  <h3>Technologies used</h3>
                   <ul class="techUsed">
                     <img class="icon" src="/assets/icon_html.png" alt="html icon" />
                     <img class="icon" src="/assets/icon_javascript.png" alt="html icon" />
@@ -96,15 +99,15 @@
               </div>
             </div>
             <div class="modal" id="modal2">
-              <div class="modal-dialog">            
-                <section class="modal-content">                  
+              <div class="modal-dialog">
+                <section class="modal-content">
                   <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo repellendus reprehenderit accusamus totam ratione!
                     Nesciunt, nemo dolorum recusandae ad ex nam similique dolorem ab perspiciatis qui. Facere, dignissimos. Nemo, ea.
                   </p>
                 </section>
               </div>
-            </div>          
+            </div>
           </ul>
         </section>
         <section id="contactSection">

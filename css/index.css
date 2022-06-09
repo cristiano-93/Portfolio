@@ -316,6 +316,10 @@ nav ul li {
 }
 
 /* ------------ Media Break Points ------------------- */
+@media (max-width: 1312px) {
+}
+@media (max-width: 1024px) {
+}
 @media (max-width: 800px) {
   nav ul {
     float: right;
@@ -346,15 +350,17 @@ nav ul li {
   .nav_links.responsive a {
     display: block;
   }
-  .title-h1{
+  .title-h1 {
     font-size: 16px;
   }
-  #title-name{
+  #title-name {
     font-size: 26px;
   }
-  .description{
+  .description {
     font-size: 16px;
   }
+}
+@media (max-width: 688px) {
 }
 
 /*  Footer styling */

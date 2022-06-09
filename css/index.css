@@ -41,7 +41,7 @@
   border-bottom-color: rgba(52, 90, 224, 1);
 }
 .title-h1 {
-  font-size: 22px;
+  font-size: 24px;
   font-weight: 500;
   margin-left: 5%;
   font-family: "PT Serif", serif;
@@ -71,14 +71,14 @@
   margin: 20px auto;
 }
 #title-name {
-  font-size: 60px;
-  margin: 3% 0 3% 10%;
+  font-size: 40px;
+  margin: 1% 0 1% 10%;
   font-family: "PT Serif", serif;
 }
 .description {
   padding: 0 0 10px 0;
   margin: 10px 10px 20px 5%;
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 500;
   font-family: "PT Serif", serif;
 }
@@ -276,13 +276,6 @@ nav ul li {
   text-align: center;
   margin-left: 15px;
 }
-/* nav ul li a {
-  text-decoration: none;
-  font-size: 18px;
-} */
-nav ul li a:hover {
-  box-shadow: 0px 0px 5px;
-}
 .nav_links {
   overflow: visible;
   padding: 5px;
@@ -296,6 +289,7 @@ nav ul li a:hover {
   padding: 8px 9px 4px 8px;
   margin-left: 20px;
   margin-top: -5px;
+  background-color: #fff;
 
   border-radius: 15px;
   border: 3px solid;
@@ -304,7 +298,6 @@ nav ul li a:hover {
   border-right-color: rgba(230, 0, 233, 1);
   border-bottom-color: rgba(52, 90, 224, 1);
 }
-
 .nav_link {
   font-size: 20px;
   font-weight: 500;
@@ -312,6 +305,7 @@ nav ul li a:hover {
   padding: 5px 8px;
   text-decoration: none;
   font-family: "PT Serif", serif;
+  background-color: #fff;
 
   border-radius: 15px;
   border: 3px solid;
@@ -320,28 +314,6 @@ nav ul li a:hover {
   border-right-color: rgba(230, 0, 233, 1);
   border-bottom-color: rgba(52, 90, 224, 1);
 }
-/* 
-.nav_links li a {
-  font-size: 20px;
-  font-weight: 500;
-  color: rgb(80, 80, 80);
-  padding: 5px 8px;
-  text-decoration: none;
-  font-family: "PT Serif", serif;
-
-  border-radius: 15px;
-  border: 3px solid;
-  border-top-style: none;
-  border-left-style: none;
-  border-right-color: rgba(230, 0, 233, 1);
-  border-bottom-color: rgba(52, 90, 224, 1);
-}
-.nav_links li a:hover {
-  box-shadow: 0px 0px 5px;
-}
-#hamBtn{
-  display: none;
-} */
 
 /* ------------ Media Break Points ------------------- */
 @media (max-width: 800px) {
@@ -350,63 +322,39 @@ nav ul li a:hover {
   }
   .nav_link {
     display: none;
+    text-decoration: none;
   }
   .hamBtn {
-    float: right;
     display: block;
-    padding: 5px 8px;
+    position: relative;
+    width: 40px;
   }
-  /* .nav_links .hamBtn {
-    margin-top: -1px;
-  } */
-  /* .nav_links a.hamBtn {    
-        float: right;
-        display: block;
-  } */
+  .nav_links.responsive {
+    right: 25px;
+    top: 54px;
+  }
   .nav_links.responsive .hamBtn {
-    position: absolute;
-    right: 0;
-    top: 0;
+    left: 11px;
   }
-
-
   .nav_links {
     overflow: visible;
-    /* transition: 0.9s ease-in-out; */
-    /* transform: translateY(-80%);  */
+    z-index: 1;
+    position: absolute;
+    right: 25px;
+    top: 54px;
   }
-
-  .nav_links.responsive {
-    position: relative;
-    /* transition: 0.9s ease-in-out; */
-    /* transform: translateY(-5%); */
-  }
-
   .nav_links.responsive a {
-    float: none;
     display: block;
   }
-  .nav_link {
-    text-decoration: none;
-    position: relative;
-    /* transition: 0.25s ease-in-out all; */
-    font-weight: 300;
+  .title-h1{
+    font-size: 16px;
   }
-
-  /* .nav_link::before {
-        content: '';
-        position: absolute;
-        background: rgb(91, 152, 137);
-        width: 1px;
-        height: 100%;
-        right: 0;
-        transition: 0.2s ease-in-out all;
-        z-index: -1;
-    } */
-
-  /* .nav_link:hover::before {
-        width: 100%;
-    } */
+  #title-name{
+    font-size: 26px;
+  }
+  .description{
+    font-size: 16px;
+  }
 }
 
 /*  Footer styling */

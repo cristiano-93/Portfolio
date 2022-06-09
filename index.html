@@ -21,7 +21,7 @@
           <ul class="nav_links" id="nav_links">
             <li>
               <a href="javascript:void(0);" class="hamBtn" id="hamBtn" onclick="openDropdown()"
-                ><img src="assets/menu-open.png" style="height: 22px;" alt="open menu"
+                ><img src="assets/menu-open.png" style="height: 22px" alt="open menu"
               /></a>
             </li>
             <li><a class="nav_link" id="headerHome" href="index.html">Home</a></li>
@@ -33,7 +33,7 @@
       </div>
       <!-- div wrapping the content -->
       <div class="content-container">
-        <button onclick="topFunction()" id="myBtn" class="myBtn" title="Go to top">Top</button>
+        <button onclick="topFunction()" id="upBtn" class="upBtn" title="Go to top">Up</button>
         <section class="intro">
           <h1 class="title-h1">Hi, my name is</h1>
           <h1 id="title-name">Cristiano Santos</h1>
@@ -71,16 +71,13 @@
               <h4 class="title-h4">Another App</h4>
               <img src="/assets/icon_html.png" alt="ar poi app icon" width="150px" height="150px" />
             </a>
-            <div class="btn-group">
-              <!-- <button type="button" class="open-modal" data-open="modal1">first modal</button> -->
-              <!-- <button type="button" class="open-modal" data-open="modal2">second modal</button> -->
-            </div>
-
             <div class="modal" id="modal1">
               <div class="modal-dialog">
                 <section class="modal-content">
-                  <img src="/assets/arpoiapp.png" alt="ar poi app icon" width="150px" height="150px" />
-                  <a href="https://cristiano-93.github.io/ArPointsOfInterestApp/" target="_blank"><p>Hosted Link</p> </a>
+                  <div class="imgIcon">
+                    <img id="arpoiappImg" src="/assets/arpoiapp.png" alt="ar poi app icon" />
+                  </div>
+                  <a class="projectHost" href="https://cristiano-93.github.io/ArPointsOfInterestApp/" target="_blank"><p>Hosted Link</p> </a>
                   <p class="description">
                     This is a mobile Augmented Reality App which will download OpenStreetMaps points of interest from a GeoJSON based API to
                     display 3D models in the device camera so that the user can look around with their camera and see the rendered ponts of
@@ -90,10 +87,10 @@
                     Clicking on the icon will take you to the GitHub Page hosting the app which means you can try it on your desktop or on
                     your mobile device.
                   </p>
-                  <h3>Technologies used</h3>
+                  <h3 class="title-h2">Technologies used</h3>
                   <ul class="techUsed">
-                    <img class="icon" src="/assets/icon_html.png" alt="html icon" />
-                    <img class="icon" src="/assets/icon_javascript.png" alt="html icon" />
+                    <img class="techIcon" src="/assets/icon_html.png" alt="html icon" />
+                    <img class="techIcon" src="/assets/icon_javascript.png" alt="html icon" />
                   </ul>
                 </section>
               </div>

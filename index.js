@@ -9,8 +9,8 @@ window.onbeforeunload = () => {
   }
 };
 
-//Go back up button script:
-mybutton = document.querySelector(".myBtn");
+//Go back up button script
+mybutton = document.querySelector(".upBtn");
 console.log(mybutton);
 window.onscroll = function () {
   scrollFunction();

@@ -18,6 +18,7 @@
 
 .headerContainer {
   padding: 5px;
+  height: 60px;
   border-radius: 15px;
   border: 3px solid;
   border-top-style: none;
@@ -26,7 +27,7 @@
   border-bottom-color: rgba(52, 90, 224, 1);
 }
 .logo {
-  height: 40px;
+  height: 70%;
   margin-left: 15px;
   margin-top: 10px;
   /* margin-bottom: -55px; */
@@ -46,15 +47,16 @@ nav ul li {
   overflow: visible;
   padding: 5px;
 }
+
 .hamBtn {
   display: none;
   overflow: visible;
   color: rgb(80, 80, 80);
   text-decoration: none;
   font-family: "PT Serif", serif;
-  padding: 8px 9px 4px 8px;
+  padding: 10px 9px 5px 8px;
   margin-left: 20px;
-  margin-top: -5px;
+  margin-top: -4px;
   background-color: #fff;
 
   border-radius: 15px;
@@ -63,6 +65,9 @@ nav ul li {
   border-left-style: none;
   border-right-color: rgba(230, 0, 233, 1);
   border-bottom-color: rgba(52, 90, 224, 1);
+}
+.hamBtn img {
+  height: 18px;
 }
 .nav_link {
   font-size: 20px;
@@ -146,7 +151,7 @@ nav ul li {
   font-family: "PT Serif", serif;
   text-align: center;
   /* margin-top: 50px; */
-  font-size: 20px;
+  font-size: 16px;
 }
 .warningP {
   color: red;
@@ -305,7 +310,7 @@ input {
   padding: 10px;
   border-radius: 8px;
   display: block;
-  width: 350px;
+  width: 70%;
   margin: 20px auto;
   resize: none;
   font-size: 20px;
@@ -321,7 +326,7 @@ textarea {
   padding: 10px;
   border-radius: 8px;
   display: block;
-  width: 350px;
+  width: 70%;
   height: 150px;
   margin: 20px auto;
   font-family: "PT Serif", serif;
@@ -334,6 +339,7 @@ textarea:focus {
   box-shadow: 0px 0px 5px;
 }
 #inputSubmit {
+  width: 50%;
   margin-top: 35px;
   font-size: 20px;
   font-weight: 500;
@@ -363,6 +369,15 @@ textarea:focus {
 @media (max-width: 1024px) {
 }
 @media (max-width: 800px) {
+
+.logo{
+  height: 70%;
+}  
+.content-container {
+  width: 80vw;
+  margin: 10vh auto 0;
+}
+
   nav ul {
     float: right;
   }
@@ -402,7 +417,32 @@ textarea:focus {
     font-size: 16px;
   }
 }
-@media (max-width: 688px) {
+@media (max-width: 600px) {
+  .content-container {
+  width: 90vw;
+  margin: 10vh auto 0;
+}
+.headerContainer{
+  height: 50px;
+}
+.logo{
+  height: 60%;
+}
+.hamBtn{
+  padding: 8px 5px 4px 5px;
+  top: -6px;
+}
+.intro {
+  width: 90%;
+}
+#projects-item-list {
+  display: block;
+}
+
+
+}
+/* Galaxy S20 FE break point is 412px */
+@media (max-width: 412px) {
 }
 
 /*  Footer styling */

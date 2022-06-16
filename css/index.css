@@ -429,7 +429,7 @@ textarea:focus {
   height: 60%;
 }
 .hamBtn{
-  padding: 8px 5px 4px 5px;
+  padding: 8px 3px 2px 3px;
   top: -6px;
 }
 .intro {
@@ -443,6 +443,9 @@ textarea:focus {
 }
 /* Galaxy S20 FE break point is 412px */
 @media (max-width: 412px) {
+  .logo{
+  height: 50%;
+}
 }
 
 /*  Footer styling */

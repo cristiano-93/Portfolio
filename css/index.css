@@ -445,10 +445,15 @@ textarea:focus {
   }
 }
 /* Galaxy S20 FE break point is 412px */
-@media (max-width: 430px) {
+@media (max-width: 412px) {
   .logo {
     height: 50%;
   }
 }
-
+/* test break point */
+@media (max-width: 385px) {
+  .logo {
+    height: 45%;
+  }
+}
 /*  Footer styling */

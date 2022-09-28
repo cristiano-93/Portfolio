@@ -1,0 +1,14 @@
+/* ----- General Settings ----- */
+#navbar{
+  /* padding: 5px; removed to test with original pad settings*/
+  border-radius: 15px;
+  border: 3px solid;
+  border-top-style: none;
+  border-left-style: none;
+  border-right-color: rgba(225, 128, 250, 1);
+  border-bottom-color: rgb(139, 211, 253, 1);
+}
+.nav-link {
+  width: 70px;
+  text-align: center;
+}

@@ -26,34 +26,18 @@
       gtag("js", new Date());
 
       gtag("config", "G-NSM4JBKJDM");
-
-      function openDropdown() {
-        var nl = document.getElementById("nav_links");
-        var hb = document.getElementById("hamBtn");
-        var state = [
-          '<img src="assets/menu-open.png" alt="open menu" style="width: 50px;">',
-          '<img src="assets/menu-close.png" alt="close menu" style="width: 50px;">',
-        ];
-        if (hb.innerHTML == state[0]) {
-          hb.innerHTML = state[1];
-          nl.classList.add("responsive");
-        } else {
-          hb.innerHTML = state[0];
-          nl.classList.remove("responsive");
-        }
-      }
     </script>
   </head>
   <body>
     <!-- div wrapping the body -->
     <div class="container-fluid py-3 px-4">
-      <nav class="navbar navbar-expand-md bg-light justify-content-between" id="navbar">
+      <nav class="navbar navbar-expand-lg bg-light justify-content-between" id="navbar">
         <div class="container-fluid">
           <a href="#" class="navbar-brand">
-            <img src="assets/logo-nobg.png" alt="Webpage logo" style="width: 350px" />
+            <img src="assets/logo-nobg.png" id="logo" alt="Webpage logo"  />
           </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-           <span class="navbar-toggler-icon"></span>
+          <button class="navbar-toggler" id="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="collapsibleNavbar">
             <ul class="navbar-nav ms-auto">
@@ -65,10 +49,11 @@
           </div>
         </div>
       </nav>
-      <!--
-      <div class="content-container">
-        <button onclick="topFunction()" id="upBtn" class="upBtn" title="Go to top">Up</button>
-        <section class="intro">
+
+      <!-- <div class="content-container">
+        <button onclick="topFunction()" id="upBtn" class="upBtn" title="Go to top">Up</button> -->
+      <section class="intro">
+        <div class="container-fluid mt-7 mx-auto p-3">
           <h1 class="title-h1">Hi, my name is</h1>
           <h1 id="title-name">Cristiano Santos</h1>
           <h4 class="description">
@@ -79,8 +64,9 @@
             Southampton, UK but willing to relocate if necessary.<br />
             Looking to kick start my career in Web Development.
           </h4>
-        </section>
-        <section class="social">
+        </div>
+      </section>
+      <!--<section class="social">
           <ul id="social-item-list">
             <a href="https://www.linkedin.com/in/cristiano-santos-8a6754193/" class="fa fa-linkedin fa-4x"></a>
             <a href="https://github.com/cristiano-93" class="fa fa-github fa-4x"></a>

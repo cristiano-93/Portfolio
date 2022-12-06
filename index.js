@@ -63,8 +63,8 @@ function openDropdown() {
   var nl = document.getElementById("nav_links");
   var hb = document.getElementById("hamBtn");
   var state = [
-    '<img src="assets/menu-open.png" alt="open menu">',
-    '<img src="assets/menu-close.png" alt="close menu">',
+    '<img src="assets/menu-open.png" alt="open menu" style="width: 50px;">',
+    '<img src="assets/menu-close.png" alt="close menu" style="width: 50px;">',
   ];
   if (hb.innerHTML == state[0]) {
     hb.innerHTML = state[1];

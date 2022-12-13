@@ -219,6 +219,11 @@ nav ul li {
   height: 150px;
   border-radius: 10px;
 }
+#countdownLogo {
+  margin: 10px auto;
+  width: 150px;
+  height: 150px;
+}
 .projectHost {
   background-color: #555;
   text-decoration: none;
